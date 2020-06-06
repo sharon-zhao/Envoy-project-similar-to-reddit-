@@ -1,0 +1,122 @@
+// Import fonts & other styling
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+// Declare color scheme variables
+$EnvoyPurple: #53005C;
+$EnvoyPurpleLight: #A04DA9;
+$EnvoyPurpleDark: #3A0043;
+$EnvoyWhite: #F8F8F8;
+$EnvoySilver: #C0C0C0;
+$EnvoyCommentSideGreen: #095C00;
+$EnvoyCommentSideBlue: #00375C;
+$DeleteRed: #E63946;
+
+body {
+  background: $EnvoySilver;
+}
+
+
+// <-- Scrollbar Style Grouping -->
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+background: linear-gradient(231deg, rgba(248, 248, 248, 1) 13%, rgba(83, 0, 92, 1) 51%, rgba(248, 248, 248, 1) 94%);
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(231deg, rgba(248, 248, 248, 1) 13%, rgba(83, 0, 92, 1) 51%, rgba(248, 248, 248, 1) 94%);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+// <-- END Scrollbar -->
+
+// <-- Header & Nav styling, keep towards the top -->
+#header {
+  position: relative;
+  top: 0;
+}
+.navbar {
+  background: $EnvoyWhite;
+  height: 4.5rem;
+  border-bottom: 1px $EnvoyPurple solid;
+}
+.nav-btn, .submitBtn {
+  background-color: $EnvoyPurple;
+  color: $EnvoyWhite;
+  border: 1px $EnvoyPurple solid;
+    &:hover {
+      background-color: $EnvoyPurpleDark;
+      color: $EnvoyWhite;
+      border: 1px $EnvoyPurple solid;
+    }
+}
+.BadgerLogo {
+  max-height: 60px;
+  padding-right: 15px;
+  background: transparent;
+}
+
+.userdropdown-button {
+  display: inline-block;
+}
+div.dropdown-menu.show {
+  position: relative;
+  right: 50px;
+  background: transparent;
+  border: none;
+    &:hover {
+      background: transparent;
+    }
+}
+.dropdown-toggle.btn.btn-primary, .btn.btn-primary{
+  color: #fff;
+  background-color: #53005C;
+  border-color: #53005C;
+  &:hover {
+        background-color: $EnvoyPurpleDark;
+        color: $EnvoyWhite;
+        border: 1px $EnvoyPurple solid;
+      }
+}
+.dropdown-item {
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    &:hover {
+      background: transparent;
+    }
+  }
+#basic-navbar-nav {
+  padding-right: 2%;
+}
+// <-- END Header/Nav -->
+
+
+// <-- Footer styling, keep at the bottom -->
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.3rem;
+  background-color: $EnvoyWhite;
+  font-size: .7rem;
+  color: $EnvoyPurple;
+  text-align: center;
+  align-items: center;
+  margin-top: .5rem;
+  border-top: 1px $EnvoyPurple solid;
+}
+
+
+// <-- END Footer -->
