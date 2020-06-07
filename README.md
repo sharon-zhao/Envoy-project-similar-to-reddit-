@@ -5,8 +5,8 @@ so they can share their content and interact with other posts from other users.
 
 ## Important Links
 
--[Envoy Express Api Repo](https://github.com/The-GA-Honey-Badgers/group-project-api)
--[Envoy Client](https://the-ga-honey-badgers.github.io/group-project-client/)
+-[Envoy Express Api Repo](https://github.com/sharon-zhao/Envoy-api)
+-[Envoy Client](https://github.com/sharon-zhao/Envoy-project-similar-to-reddit-)
 
 ## Planning Story
 
