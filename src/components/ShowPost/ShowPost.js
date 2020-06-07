@@ -15,6 +15,7 @@ const ShowPost = (props) => {
     update: false,
     commentId: null
   })
+  // const [userid, setUserid] = useState(null)
   const [refresh, setRefresh] = useState(false)
   const [comment, setComment] = useState({
     body: ''
@@ -73,7 +74,7 @@ const ShowPost = (props) => {
         'Authorization': `Token token=${props.user.token}`
       }
     })
-      .then(() => {
+      .then(res => {
         closeUpdateModal()
         updateFormReset()
       })
@@ -131,13 +132,12 @@ const ShowPost = (props) => {
         // console.log(res.data.post)
         setPost(res.data.post)
       })
-      // .catch(console.error)
+    // .catch(console.error)
   }, [showUpdateModal, refresh, showCreateModal])
 
   if (!post) {
     return <p>Loading....</p>
   }
-
   const { title, body, imgUrl } = post
   const comments = post.comments
 
@@ -174,7 +174,7 @@ const ShowPost = (props) => {
           <Form.Control required maxLength='200' value={comment.body} name="body" as="textarea" placeholder="Maximum 200 characters..." onChange={handleUpdateInput} />
           <Modal.Footer>
             <Button className="commentModalSubmitBtn" type="submit">
-            Update Comment
+         Update Comment
             </Button>
           </Modal.Footer>
         </Form>
@@ -212,11 +212,11 @@ const ShowPost = (props) => {
           <div className="buttonBox">
             { props.user && <Button onClick={onCreateClick} className="button">Create Comment</Button>}
             <Button as={Link} to='/' className="button">Back to Latest Posts</Button>
-            { props.user &&
-            <div>
-              <Button as={Link} to={props.match.url + '/post-update'} className="button">Update Post</Button>
-              <Button onClick={handleDeleteClick} id="delete-button" className="button delete-button">Delete Post</Button>
-            </div> }
+            { props.user && post.owner._id === props.user._id
+              ? <div>
+                <Button as={Link} to={props.match.url + '/post-update'} className="button">Update Post</Button>
+                <Button onClick={handleDeleteClick} id="delete-button" className="button delete-button">Delete Post</Button>
+              </div> : <div></div> }
           </div>
           {commentsJsx}
         </Card.Body>

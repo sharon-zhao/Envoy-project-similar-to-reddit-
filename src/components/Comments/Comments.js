@@ -8,7 +8,6 @@ import apiUrl from '../../apiConfig'
 const Comments = props => {
   const user = props.user
   const postComments = props.commentArray
-
   const onUpdateClick = commentId => {
     // console.log('the commentId: ', commentId)
     props.updateModal({
@@ -16,7 +15,6 @@ const Comments = props => {
       commentId: commentId
     })
   }
-
   const onCommentDelete = (commentId, postId) => {
     axios({
       method: 'DELETE',
@@ -50,15 +48,15 @@ const Comments = props => {
             <div>
               <div className='username'>
                 <span>{comment.author ? comment.author.email : 'USERNAME'}</span>
-                <span style={{ 'margin-left': '5px' }}>Added on {comment.createdAt ? comment.createdAt.split('T')[0] : 'DATE'}</span>
+                <span style={{ 'marginLeft': '5px' }}>Added on {comment.createdAt ? comment.createdAt.split('T')[0] : 'DATE'}</span>
               </div>
               <div className='commentBody'>{comment.body}</div>
             </div>
-            {user &&
-            <div className="buttonContainer">
-              <Button onClick={() => onUpdateClick(comment._id)} className="button">Update</Button>
-              <Button id="delete-button" className="button delete-button" onClick={() => onCommentDelete(comment._id, comment.postId)}>Delete</Button>
-            </div>}
+            {user && comment.author._id === user._id
+              ? <div className="buttonContainer">
+                <Button onClick={() => onUpdateClick(comment._id)} className="button">Update</Button>
+                <Button id="delete-button" className="button delete-button" onClick={() => onCommentDelete(comment._id, comment.postId)}>Delete</Button>
+              </div> : <div></div>}
           </div>
         </div>
       ))}
