@@ -12,8 +12,8 @@ class SignIn extends Component {
     super()
 
     this.state = {
-      email: 'shary@any',
-      password: 'f'
+      email: '',
+      password: ''
     }
   }
 
