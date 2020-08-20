@@ -121,7 +121,6 @@ class PostCreate extends Component {
               <this.InlineImgUpload />
 
               <Form onSubmit={this.handleWordSubmit}>
-
                 <img src= {this.state.post.imgUrl} style={{ maxWidth: '50%' }} />
 
                 <Form.Group controlId="formBasicTitle">
