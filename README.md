@@ -8,27 +8,22 @@ so they can share their content and interact with other posts from other users.
 -[Envoy Express Api Repo](https://github.com/sharon-zhao/Envoy-api)
 -[Envoy Client](https://github.com/sharon-zhao/Envoy-project-similar-to-reddit-)
 
-## Planning Story
+## Demo
 
-As a group we chose to tackle the message board prompt and we decided to try
-and reproduce a simplistic version of a Reddit-like message board. Once we built
-a working backend API with which we could CRUD on multiple resources, we
-began working on the front-ent by brainstorming the various routes and components
-that needed to be built for the React app. Once we knew what components needed
-to be created and rendered, we each focused on a resource and built the frontend
-components to successfully CRUD on these resources.
+![](https://user-images.githubusercontent.com/62820094/94222803-5f09b580-febc-11ea-9108-ea1ee916e87c.png)
 
-We ran into an interesting bug when we tried to run an axios API call within a
-useEffect hooks function that didn't have a dependency array. The component to
-which this function belonged to was never unmounted, but sat in the background of
-two bootstrap modal components which had their own respective resource crud actions.
-Upon successful submission of these forms, the modals would disappear and the
-original component would correctly display the new API index call which it was
-making; however, this wasn't an ideal behavior as the useEffect function was
-running in an infinite loop. To fix this bug we decided to include the modal
-components as part of the original component making the infinite API calls so
-that we could toggle some state parameters to selectively set off the API call
-that was originally running on repeat.
+![](https://user-images.githubusercontent.com/62820094/94222932-b1e36d00-febc-11ea-8942-cc9adba867a5.png)
+
+- This app likes Reddit you can view various post there and comment on others posts.
+
+![](https://user-images.githubusercontent.com/62820094/94223078-0981d880-febd-11ea-85c2-c46cf4f332e4.png)
+
+![](https://user-images.githubusercontent.com/62820094/94223085-0dadf600-febd-11ea-8f36-a41b4c5253a6.png)
+- You can create your own post share your idea with others. The image was stored in AWS S3.
+
+![](https://user-images.githubusercontent.com/62820094/94222818-68931d80-febc-11ea-8d17-9611c9ad9448.png)
+- You can share the post to your social media.
+
 
 ### User Stories
 
