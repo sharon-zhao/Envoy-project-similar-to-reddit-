@@ -12,8 +12,7 @@ so they can share their content and interact with other posts from other users.
 
 ![](https://user-images.githubusercontent.com/62820094/94222803-5f09b580-febc-11ea-9108-ea1ee916e87c.png)
 
-![](https://user-images.githubusercontent.com/62820094/94222932-b1e36d00-febc-11ea-8942-cc9adba867a5.png)
-
+![](https://user-images.githubusercontent.com/62820094/94223436-f4597980-febd-11ea-8c31-275d027d6b61.png)
 - This app likes Reddit you can view various post there and comment on others posts.
 
 ![](https://user-images.githubusercontent.com/62820094/94223078-0981d880-febd-11ea-85c2-c46cf4f332e4.png)
@@ -21,7 +20,7 @@ so they can share their content and interact with other posts from other users.
 ![](https://user-images.githubusercontent.com/62820094/94223085-0dadf600-febd-11ea-8f36-a41b4c5253a6.png)
 - You can create your own post share your idea with others. The image was stored in AWS S3.
 
-![](https://user-images.githubusercontent.com/62820094/94222818-68931d80-febc-11ea-8d17-9611c9ad9448.png)
+![](https://user-images.githubusercontent.com/62820094/94222932-b1e36d00-febc-11ea-8942-cc9adba867a5.png)
 - You can share the post to your social media.
 
 
