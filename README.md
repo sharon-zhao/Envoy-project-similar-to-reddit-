@@ -44,20 +44,12 @@ so they can share their content and interact with other posts from other users.
 - JavaScript
 - HTML
 - CSS
-- CSS Sass
-- ReactJS
+- SASS
+- React.js
 - Ajax (Axios)
 - Bootstrap
+- AWS
 
-### Unsolved Problems/Future Updates
-
-- Would like to eventually add a current news API integration with a carousel
-of latest news.
-- Would like to eventually add a spell check feature.
-- Would like to eventually add the functionality to like posts and rank posts
-based on number of likes.
-- Would like to eventually allow users to add tags to posts and categorize their
-posts.
 
 #### Wireframe and ERD
 
