@@ -39,6 +39,7 @@ class App extends Component {
     const { msgAlerts, user } = this.state
 
     return (
+      // fragment could return multiple elements
       <Fragment>
         <div id="page-container">
           <Fragment>

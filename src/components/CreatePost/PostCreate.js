@@ -71,9 +71,10 @@ class PostCreate extends Component {
       .then(res => {
         // console.log(res)
         // console.log('this is image upload response', res.data.upload.imageUrl)
-        localStorage.setItem('imgUrl', res.data.upload.imageUrl)
+        // localStorage.setItem('imgUrl', res.data.upload.imageUrl)
         const imgUrl = { imgUrl: res.data.upload.imageUrl }
         const newState = Object.assign({}, this.state.post, imgUrl)
+        // newState: {title: null, body: null, imgUrl: "https:"}
         this.setState({ post: newState })
       })
       .then(() => this.props.msgAlert({

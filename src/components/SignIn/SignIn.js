@@ -89,5 +89,5 @@ class SignIn extends Component {
     )
   }
 }
-
+// withRouter contains this.props.history, history used for redirect to another place
 export default withRouter(SignIn)

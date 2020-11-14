@@ -5,8 +5,8 @@ so they can share their content and interact with other posts from other users.
 
 ## Important Links
 
--[Envoy Express Api Repo](https://github.com/sharon-zhao/Envoy-api)
--[Envoy Client](https://github.com/sharon-zhao/Envoy-project-similar-to-reddit-)
+- [Envoy Express Api Repo](https://github.com/sharon-zhao/Envoy-api)
+- [Envoy Client](https://github.com/sharon-zhao/Envoy-project-similar-to-reddit-)
 
 ## Demo
 
